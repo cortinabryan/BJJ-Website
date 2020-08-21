@@ -38,6 +38,7 @@ nav {
     text-decoration: none;
     font-size: 40px;
     display: block;
+    transition: all 0.3s ease-out;
 }
 
 .nav {
@@ -58,27 +59,32 @@ nav li {
 
 .white-belt h2:hover {
     color: white;
-    transform: rotate(6deg);
+    transform: rotate(-16deg);
+    transition: all 1s ease-out;
 }
 
 .blue-belt h2:hover {
     color: blue;
-    transform: rotate(6deg);
+    transform: rotate(-16deg);
+    transition: all 1s ease-out;
 }
 
 .purple-belt h2:hover {
     color: purple;
-    transform: rotate(6deg);
+    transform: rotate(-16deg);
+    transition: all 1s ease-out;
 }
 
 .brown-belt h2:hover {
     color: brown;
-    transform: rotate(6deg);
+    transform: rotate(-16deg);
+    transition: all 1s ease-out;
 }
 
 .black-belt h2:hover {
     color: black;
-    transform: rotate(6deg);
+    transform: rotate(-16deg);
+    transition: all 1s ease-out;
 }
 
 main{
@@ -162,6 +168,14 @@ nav{
     border-radius:var(--main-radius);
     padding-top:var(--main-padding);
 }
+
+/* .learn-more{
+    background: #84ffff;
+    grid-area: main;
+    border-radius:var(--main-radius);
+    padding-top:var(--main-padding);
+    display: grid;
+} */
 
 #content1{
     background: #6fffd2;
