@@ -9,10 +9,11 @@
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1.5fr 1.2fr 1.2fr 0.3fr;
+    grid-template-rows: 0.2fr 1.5fr 1.5fr 1.2fr 1.2fr 0.3fr;
     grid-template-areas:
     "nav nav nav nav"
     "sidebar main main main"
+    "sidebar learn-more learn-more learn-more"
     "sidebar content1 content2 content3"
     "sidebar content4 content5 content6"
     "footer footer footer footer";
@@ -149,7 +150,7 @@ p.desc {
 
 d  h3 {
     background-color: red;
-    /* grid-area: h3; */
+    grid-area: h3;
     font-size: 40px;
 }
 
@@ -169,13 +170,18 @@ nav{
     padding-top:var(--main-padding);
 }
 
-/* .learn-more{
+.learn-more{
     background: #84ffff;
-    grid-area: main;
+    grid-area: learn-more;
     border-radius:var(--main-radius);
     padding-top:var(--main-padding);
     display: grid;
-} */
+    padding: 60px;
+}
+
+.learn-more-inner {
+
+}
 
 #content1{
     background: #6fffd2;
