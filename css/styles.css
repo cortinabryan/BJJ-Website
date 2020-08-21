@@ -23,8 +23,7 @@
     color: #004d40;
     text-align: center;
     grid-gap: 20px;
-    margin: 20px;
-    
+    margin-top: 20px;
 
 }
 
@@ -38,6 +37,7 @@ nav {
     color: #FFF;
     text-decoration: none;
     font-size: 40px;
+    display: block;
 }
 
 .nav {
@@ -45,6 +45,40 @@ nav {
     margin: 0;
     padding: 0;
     display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+.nav a:hover {
+    color: red;
+    transform: rotate(6deg);
+}
+
+.white-belt h2:hover {
+    color: white;
+    transform: rotate(6deg);
+}
+
+.blue-belt h2:hover {
+    color: blue;
+    transform: rotate(6deg);
+}
+
+.purple-belt h2:hover {
+    color: purple;
+    transform: rotate(6deg);
+}
+
+.brown-belt h2:hover {
+    color: brown;
+    transform: rotate(6deg);
+}
+
+.black-belt h2:hover {
+    color: black;
+    transform: rotate(6deg);
 }
 
 main{
