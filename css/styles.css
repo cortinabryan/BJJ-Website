@@ -148,11 +148,11 @@ p.desc {
     text-align: center;
 }
 
-d  h3 {
-    background-color: red;
+/* .belts > h3 { 
+    background-color: blue;
     grid-area: h3;
-    font-size: 40px;
-}
+    font-size: 70px;
+} */
 
 
 nav{
@@ -175,12 +175,34 @@ nav{
     grid-area: learn-more;
     border-radius:var(--main-radius);
     padding-top:var(--main-padding);
-    display: grid;
-    padding: 60px;
+    display: flex;
+    padding: 60px 45px;
+    justify-content: center;
 }
 
-.learn-more-inner {
+.learn-more-inner h1 {
+    /* font-weight: normal; */
+    font-size: 3rem;
+    margin: 0;
+    
+}
 
+.learn-more-inner p {
+    font-size: 1.18rem;
+    line-height: 1.6;
+}
+
+.learn-more button {
+    background-color: #3949ab;
+    color: #FFF;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    /* display: inline-block; */
+}
+
+.contents {
+    background-color: red;
 }
 
 #content1{
