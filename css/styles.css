@@ -58,6 +58,8 @@ nav li {
     transform: rotate(6deg);
 }
 
+
+
 .white-belt h2:hover {
     color: white;
     transform: rotate(-16deg);
@@ -184,7 +186,7 @@ nav{
     /* font-weight: normal; */
     font-size: 3rem;
     margin: 0;
-    
+
 }
 
 .learn-more-inner p {
@@ -203,6 +205,43 @@ nav{
 
 .contents {
     background-color: red;
+    padding: 100px 20px;
+    /* margin: 20px; */
+    /* color: blue; */
+}
+
+.contents-inner {
+    border-radius:var(--main-radius);
+    padding-top:var(--main-padding);
+    display: flex;
+    flex-direction: column;
+    height:200px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-basis: 50%;; */
+}
+
+.contents h3 {
+    color: #283593;
+    font-size: 2rem;
+
+}
+
+.contents h4 {
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    font-size: .8rem;
+}
+
+.contents button{
+    background-color: #3949ab;
+    color: #FFF;
+    text-decoration: none;
+    padding: 12px 20px;
+    /* margin-top: 3rem; */
+    border-radius: 8px;
 }
 
 #content1{
@@ -252,6 +291,8 @@ footer{
     grid-area: footer;
     border-radius:var(--main-radius);
     padding-top:var(--main-padding);
+    padding: 20px 0;
+    color: #999;
 }
 
 @media only screen and (max-width: 550px){
