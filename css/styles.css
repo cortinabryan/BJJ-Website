@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 :root{
     --main-radius:5px;
     --main-radius:5px;
@@ -13,8 +19,13 @@
     left: -260px;
     background: rgb(36, 15, 15);
     z-index: 9999;
-
+    transition: 0.3s all ease;
+    /* padding-bottom: 600px; */
 }
+
+/* .menu {
+    list-style-type: none;
+} */
 
 .menu-item {
     color: #FFF;
@@ -44,6 +55,7 @@ nav li {
     left: 0px;
 }
 
+/* hamburger icon */
 .hamburger {
     position: absolute;
     top: 10px;
@@ -81,7 +93,7 @@ nav li {
 
 
 
-
+/* Main Content */
 
 .container {
     display: grid;
@@ -107,13 +119,6 @@ nav li {
 .shift {
     margin-left: 260px;
 }
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 
 .white-belt h2:hover {
     color: white;
@@ -205,19 +210,13 @@ p.desc {
     text-align: center;
 }
 
-/* .belts > h3 { 
-    background-color: blue;
-    grid-area: h3;
-    font-size: 70px;
-} */
 
-
-nav{
+/* nav{
     background: #a7ffeb;
     grid-area: nav;
     border-radius:var(--main-radius);
     padding-top:var(--main-padding);
-}
+} */
 
 
 .sidebar{
@@ -362,9 +361,8 @@ footer{
 @media only screen and (max-width: 550px){
     .container{
         grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-rows: 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1fr;
         grid-template-areas:
-        "nav"
         "sidebar"
         "main"
         "content1"
