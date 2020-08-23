@@ -98,7 +98,7 @@ main{
     display: grid;
     /* grid-template-columns: 1fr 4fr 1fr;
     grid-rows: 1fr 1fr 1fr; */
-    /* grid-template-areas: 
+    /* grid-template-areas:
     "belt desc h3" */
 }
 
@@ -165,11 +165,20 @@ nav{
 }
 
 
-#sidebar{
+.sidebar{
     background: #18ffff;
     grid-area: sidebar;
     border-radius:var(--main-radius);
     padding-top:var(--main-padding);
+}
+
+.open {
+    left: 0px;
+}
+
+.hamburger {
+    position: absolute;
+    top:10px;
 }
 
 .learn-more{
