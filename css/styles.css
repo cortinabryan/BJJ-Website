@@ -155,6 +155,28 @@ main {
 }
 
 .main-inner {
+  display: grid;
+  background: rgb(112, 66, 23);
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "left right";
+}
+
+.main-inner-left {
+  grid-area: left;
+  background: rgb(16, 16, 44);
+  height: 100vh;
+}
+
+.main-inner-right {
+  grid-area: right;
+  background: rgb(80, 12, 12);
+  height: 100vh;
+}
+
+.main-inner h1 {
+  font-size: 3rem;
 }
 
 .main-inner button {
