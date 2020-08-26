@@ -161,7 +161,7 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "left right";
-  line-height: 6;
+  line-height: 4;
 }
 
 .main-inner-left {
@@ -206,36 +206,6 @@ main {
   margin-left: 260px;
 }
 
-.white-belt h2:hover {
-  color: white;
-  transform: rotate(-16deg);
-  transition: all 1s ease-out;
-}
-
-.blue-belt h2:hover {
-  color: blue;
-  transform: rotate(-16deg);
-  transition: all 1s ease-out;
-}
-
-.purple-belt h2:hover {
-  color: purple;
-  transform: rotate(-16deg);
-  transition: all 1s ease-out;
-}
-
-.brown-belt h2:hover {
-  color: brown;
-  transform: rotate(-16deg);
-  transition: all 1s ease-out;
-}
-
-.black-belt h2:hover {
-  color: black;
-  transform: rotate(-16deg);
-  transition: all 1s ease-out;
-}
-
 .open {
   left: 0px;
 }
@@ -248,7 +218,8 @@ main {
 /* learn-more  */
 
 .learn-more {
-  background: #84ffff;
+  background-color: rgb(63, 14, 14);
+  opacity: 1;
   grid-area: learn-more;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
@@ -407,6 +378,36 @@ p.desc {
   line-height: 30px;
   padding: 30px 40px;
   text-align: center;
+}
+
+.white-belt h2:hover {
+  color: white;
+  transform: rotate(-16deg);
+  transition: all 1s ease-out;
+}
+
+.blue-belt h2:hover {
+  color: blue;
+  transform: rotate(-16deg);
+  transition: all 1s ease-out;
+}
+
+.purple-belt h2:hover {
+  color: purple;
+  transform: rotate(-16deg);
+  transition: all 1s ease-out;
+}
+
+.brown-belt h2:hover {
+  color: brown;
+  transform: rotate(-16deg);
+  transition: all 1s ease-out;
+}
+
+.black-belt h2:hover {
+  color: black;
+  transform: rotate(-16deg);
+  transition: all 1s ease-out;
 }
 
 footer {
