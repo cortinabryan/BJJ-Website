@@ -108,6 +108,7 @@ nav li {
     "content1 content2 content3"
     "content4 content5 content6"
     "belts belts belts"
+    "signup signup signup"
     "footer footer footer";
   font-family: "Inter", sans-serif;
   font-weight: 800;
@@ -419,6 +420,72 @@ p.desc {
   transition: all 1s ease-out;
 }
 
+/* Sign-up form */
+
+.signup-form {
+  grid-area: signup;
+  background-color: rgb(63, 14, 14);
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  /* display: flex; */
+  padding: 60px 45px;
+  /* justify-content: center; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  top: 50%;
+  /* transform: translateY(50%); */
+  width: 100%;
+}
+
+.signup-form-inner {
+  max-width: 550px;
+  margin: 0 auto;
+  background-color: rgb(20, 20, 97, 0.5);
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 0 10px;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.input-fields,
+.msg {
+  width: 48%;
+}
+
+.input-fields input,
+.msg textarea {
+  margin: 10px 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #c5ecfd;
+  padding: 10px;
+  color: #cdecfd;
+  width: 100%;
+}
+
+.msg textarea {
+  height: 212px;
+}
+
+.msg button {
+  background: #39b7dd;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+/* footer */
+
 footer {
   background: #1de9b6;
   grid-area: footer;
@@ -442,5 +509,12 @@ footer {
       "content5"
       "content6"
       "footer";
+  }
+  .signup-form {
+    flex-direction: column;
+  }
+  .input-fields,
+  .msg {
+    width: 100%;
   }
 }
