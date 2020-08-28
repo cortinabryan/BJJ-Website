@@ -441,6 +441,9 @@ p.desc {
   max-width: 550px;
   margin: 0 auto;
   background-color: rgb(20, 20, 97, 0.5);
+  background-image: url(../images/bjj-lion.jpg);
+  background-size: cover;
+  /* background-position: top; */
   padding: 30px;
   border-radius: 5px;
   display: flex;
@@ -462,7 +465,8 @@ p.desc {
 .input-fields input,
 .msg textarea {
   margin: 10px 0;
-  background: transparent;
+  /* background: transparent; */
+  background: rgba(95, 20, 20, 0.418);
   border: 0;
   border-bottom: 2px solid #c5ecfd;
   padding: 10px;
@@ -475,11 +479,11 @@ p.desc {
 }
 
 .msg button {
-  background: #39b7dd;
+  background: rgba(95, 20, 20, 0.418);
   text-align: center;
   padding: 15px;
   border-radius: 5px;
-  color: #fff;
+  color: #red;
   cursor: pointer;
   text-transform: uppercase;
 }
