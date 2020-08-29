@@ -441,29 +441,48 @@ p.desc {
   grid-template-areas: "signup-left signup-right";
 }
 
+.signup-form h1 {
+  font-size: 2rem;
+  position: top;
+}
+
 .signup-form-left {
   grid-area: signup-left;
 }
 
 .signup-form-right {
   grid-area: signup-right;
+  background-color: rgb(16, 16, 41);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
 }
 
 .signup-form-left-inner {
-  max-width: 550px;
+  max-width: 800px;
   margin: 0 auto;
   background-color: rgb(20, 20, 97, 0.5);
   background-image: url(../images/bjj-lion-3.png);
   background-size: cover;
   /* background-position: top; */
   padding: 30px;
-  border-radius: 5px;
+  border-radius: var(--main-radius);
   display: flex;
   flex-direction: row;
   box-shadow: 0 0 10px;
 }
 
 .signup-form-right-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 2;
+}
+
+.signup-form-right h2 {
+  font-size: 2em;
 }
 
 .input-fields {
