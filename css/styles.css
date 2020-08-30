@@ -427,32 +427,56 @@ p.desc {
   background-color: rgb(63, 14, 14);
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
-  /* display: flex; */
   padding: 60px 45px;
-  /* justify-content: center; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-  top: 50%;
-  /* transform: translateY(50%); */
   width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-form-inner {
+  background-color: rgb(34, 33, 92);
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "signup-left signup-right";
-  position: sticky;
+  grid-template-rows: 0.2fr 1fr;
+  grid-template-areas:
+    "title title"
+    "signup-left signup-right";
+  /* position: sticky; */
+  padding: 20px;
 }
 
 .signup-form h1 {
+  grid-area: title;
   font-size: 2rem;
-  position: absolute;
-  top: 0;
+  /* position: absolute; */
+  /* top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  margin-top: 5px; */
+  position: relative;
+  display: inline-block;
+  padding-bottom: 35px;
+}
+
+.signup-form h1::after {
+  content: "";
+  height: 2px;
+  width: 20%;
+  background: #f24432;
+  position: absolute;
+  left: calc(50% - 10%);
+  bottom: 0;
+  margin-bottom: 20px;
 }
 
 .signup-form-left {
   grid-area: signup-left;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
 }
 
 .signup-form-right {
@@ -484,6 +508,7 @@ p.desc {
   flex-direction: column;
   justify-content: center;
   line-height: 2;
+  font-family: "Architects Daughter", cursive;
 }
 
 .signup-form-right h2 {
