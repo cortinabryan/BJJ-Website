@@ -45,7 +45,7 @@ body {
 }
 
 .menu-item:hover {
-  background: #51968a;
+  background: #7a0300;
   cursor: pointer;
 }
 
@@ -153,6 +153,10 @@ main {
       grid-rows: 1fr 1fr 1fr; */
   /* grid-template-areas:
       "belt desc h3" */
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .main-inner {
@@ -352,11 +356,15 @@ main {
 
 .belt-system {
   /* turn into border */
-  background-color: #7a0300;
   grid-area: belts;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
   display: grid;
+  border-color: #7a0300;
+  border-style: solid;
+  border-width: 20px;
+  border-radius: 50px;
+  background-color: rgba(128, 128, 128, 0.7);
 }
 
 .belt-system-inner {
@@ -366,22 +374,27 @@ main {
 .belt-system-inner > h1 {
   font-size: 50px;
   /* text-decoration: underline; */
-  background-color: rgba(255, 0, 0, 0.308);
+  /* background-color: rgba(255, 0, 0, 0.308); */
   margin: 0;
   padding: 0;
-  font-family: "Kalam", cursive;
+  font-family: "Orbitron", sans-serif;
 }
 
 .belts {
   padding: 0px 45px;
-  background-color: #00124d;
+  /* background-color: #00124d; */
+}
+
+.belts h2 {
+  font-family: "Architects Daughter", cursive;
+  font-size: 3rem;
 }
 
 .belts > div {
   display: flex;
   align-items: center;
   justify-items: center;
-  background-color: rgb(61, 23, 23);
+  /* background-color: rgb(61, 23, 23); */
   font-size: 20px;
   padding-left: 30px;
   padding-right: 30px;
@@ -402,9 +415,22 @@ p.desc {
   text-align: center;
 }
 
+.belt-system-inner h1:hover {
+  /* color: rgb(220, 112, 85); */
+  transform: rotate(3deg);
+  transition: all 1s ease-out;
+  /* font-size: 70px; */
+}
+
 .white-belt h2:hover {
   color: white;
   transform: rotate(-16deg);
+  transition: all 1s ease-out;
+}
+
+.white-belt h3:hover {
+  color: white;
+  transform: rotate(16deg);
   transition: all 1s ease-out;
 }
 
@@ -414,9 +440,21 @@ p.desc {
   transition: all 1s ease-out;
 }
 
+.blue-belt h3:hover {
+  color: blue;
+  transform: rotate(16deg);
+  transition: all 1s ease-out;
+}
+
 .purple-belt h2:hover {
   color: purple;
   transform: rotate(-16deg);
+  transition: all 1s ease-out;
+}
+
+.purple-belt h3:hover {
+  color: purple;
+  transform: rotate(16deg);
   transition: all 1s ease-out;
 }
 
@@ -426,9 +464,21 @@ p.desc {
   transition: all 1s ease-out;
 }
 
+.brown-belt h3:hover {
+  color: brown;
+  transform: rotate(16deg);
+  transition: all 1s ease-out;
+}
+
 .black-belt h2:hover {
   color: black;
   transform: rotate(-16deg);
+  transition: all 1s ease-out;
+}
+
+.black-belt h3:hover {
+  color: black;
+  transform: rotate(16deg);
   transition: all 1s ease-out;
 }
 
@@ -436,7 +486,7 @@ p.desc {
 
 .signup-form {
   grid-area: signup;
-  background-color: rgb(63, 14, 14);
+  background-color: rgba(63, 14, 14, 0.9);
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
   padding: 60px 45px;
@@ -447,7 +497,7 @@ p.desc {
 }
 
 .signup-form-inner {
-  background-color: rgb(34, 33, 92);
+  /* background-color: rgb(34, 33, 92); */
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
   display: grid;
@@ -458,6 +508,7 @@ p.desc {
     "signup-left signup-right";
   /* position: sticky; */
   padding: 20px;
+  font-family: "Orbitron", sans-serif;
 }
 
 .signup-form h1 {
@@ -472,6 +523,7 @@ p.desc {
   position: relative;
   display: inline-block;
   padding-bottom: 35px;
+  color: white;
 }
 
 .signup-form h1::after {
@@ -507,7 +559,7 @@ p.desc {
 
 .signup-form-right {
   grid-area: signup-right;
-  background-color: rgb(16, 16, 41);
+  background-color: rgba(16, 16, 41, 0.9);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -525,6 +577,13 @@ p.desc {
 
 .signup-form-right h2 {
   font-size: 2em;
+  color: white;
+}
+
+.signup-form-right h2:hover {
+  font-size: 2.3em;
+  color: white;
+  transition: all 1s ease-in-out;
 }
 
 .input-fields {
@@ -555,19 +614,18 @@ p.desc {
 }
 
 .msg button {
-  background: rgba(95, 20, 20, 0.418);
-  text-align: center;
-  padding: 15px;
-  border-radius: 5px;
+  background-color: #3a3a3aea;
   color: #fff;
-  cursor: pointer;
-  text-transform: uppercase;
+  text-decoration: none;
+  padding: 12px 20px;
+  /* margin-top: 3rem; */
+  border-radius: 8px;
 }
 
 /* footer */
 
 footer {
-  background: #1de9b6;
+  background: #7a0300;
   grid-area: footer;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
