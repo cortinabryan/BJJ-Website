@@ -286,14 +286,15 @@ main {
 }
 
 .contents h3 {
-  color: #283593;
+  color: rgb(220, 112, 85);
   font-size: 2rem;
+  font-family: "Orbitron", sans-serif;
 }
 
 .contents h4 {
   margin: 0;
   line-height: 1.6;
-  color: #333;
+  color: white;
   font-size: 0.8rem;
 }
 
@@ -307,7 +308,7 @@ main {
 }
 
 #content1 {
-  background: rgb(63, 14, 14);
+  background: rgba(0, 0, 0, 0.9);
   grid-area: content1;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
@@ -315,42 +316,43 @@ main {
 }
 
 #content2 {
-  background: rgb(220, 112, 85);
+  background: rgba(0, 0, 0, 0.9);
   grid-area: content2;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
 }
 
 #content3 {
-  background: rgb(63, 14, 14);
+  background: rgba(0, 0, 0, 0.9);
   grid-area: content3;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
 }
 
 #content4 {
-  background: rgb(220, 112, 85);
+  background: rgba(0, 0, 0, 0.9);
   grid-area: content4;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
 }
 
 #content5 {
-  background: rgb(63, 14, 14);
+  background: #7a0200e5;
   grid-area: content5;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
 }
 
 #content6 {
-  background: rgb(220, 112, 85);
+  background: rgba(0, 0, 0, 0.9);
   grid-area: content6;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
 }
 
 .belt-system {
-  background: #84ffff;
+  /* turn into border */
+  background-color: #7a0300;
   grid-area: belts;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
@@ -362,11 +364,12 @@ main {
 }
 
 .belt-system-inner > h1 {
-  font-size: 40px;
-  text-decoration: underline;
-  background-color: red;
+  font-size: 50px;
+  /* text-decoration: underline; */
+  background-color: rgba(255, 0, 0, 0.308);
   margin: 0;
   padding: 0;
+  font-family: "Kalam", cursive;
 }
 
 .belts {
