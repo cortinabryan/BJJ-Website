@@ -417,9 +417,9 @@ p.desc {
 
 .belt-system-inner h1:hover {
   /* color: rgb(220, 112, 85); */
-  transform: rotate(3deg);
+  /* transform: rotate(3deg); */
   transition: all 1s ease-out;
-  /* font-size: 70px; */
+  font-size: 70px;
 }
 
 .white-belt h2:hover {
