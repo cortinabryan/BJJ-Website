@@ -17,19 +17,14 @@ body {
 .nav {
   font-family: "Inter", sans-serif;
   font-weight: 800;
-  position: absolute;
+  position: fixed;
   width: 260px;
   height: 100%;
   left: -260px;
   background: rgb(36, 15, 15);
   z-index: 9999;
   transition: 0.3s all ease;
-  /* padding-bottom: 600px; */
 }
-
-/* .menu {
-    list-style-type: none;
-} */
 
 .menu-item {
   color: #fff;
@@ -117,7 +112,7 @@ nav li {
   color: rgb(111, 0, 0);
   text-align: center;
   grid-gap: 20px;
-  margin-top: 20px;
+  margin-top: 0px;
   padding: 0 10px;
 }
 
