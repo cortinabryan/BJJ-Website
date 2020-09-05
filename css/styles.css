@@ -12,6 +12,10 @@
 body {
   background-image: url(https://wallpaperaccess.com/full/2187.jpg);
   background-attachment: fixed;
+
+  /* @media screen and (min-width: 480px) {
+    background: white;
+  } */
 }
 
 .nav {
@@ -269,6 +273,7 @@ button:hover {
   padding: 100px 20px;
   /* margin: 20px; */
   /* color: blue; */
+  display: flex;
 }
 
 .contents-inner {
@@ -311,7 +316,6 @@ button:hover {
   grid-area: content1;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
-  display: flex;
 }
 
 #content2 {
@@ -628,19 +632,22 @@ footer {
   color: #999;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 480px) {
   .container {
     grid-template-columns: 1fr;
-    grid-template-rows: 2.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1fr;
+    grid-template-rows: 2.2fr 1.5fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 2fr 1.5fr 1fr;
     grid-template-areas:
         /* "sidebar" 0.4fr*/
       "main"
+      "learn-more"
       "content1"
       "content2"
       "content3"
       "content4"
       "content5"
       "content6"
+      "belts"
+      "signup"
       "footer";
   }
   .signup-form {
