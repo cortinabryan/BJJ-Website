@@ -527,13 +527,14 @@ p.desc {
 
 .signup-form h1::after {
   content: "";
-  height: 2px;
+  height: 5px;
   width: 20%;
   background: #f24432;
   position: absolute;
   left: calc(50% - 10%);
   bottom: 0;
   margin-bottom: 20px;
+  border-radius: 5px;
 }
 
 .signup-form-left {
